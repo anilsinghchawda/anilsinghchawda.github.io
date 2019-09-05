@@ -1,0 +1,198 @@
+#h11{
+	color: #DA3738;
+}
+.blackText{
+	color:#000;
+}
+.blackText:hover{
+
+	color: #fff;
+	background-color: #000;
+	border-radius: 10px;
+}
+.whiteText:hover{
+	color:#ffff00;
+}
+.borderRadius{
+	border-radius: 20px !important;
+}
+.navbar-brand{
+	background-image: url("../image/icon.ico");
+	border-radius: 60px;
+	height: 73px;
+	width: 73px;
+}
+#navbar-1
+{
+	background-color:#000000 !important ;
+	color: #fff !important;	
+	/*height: 120px;*/
+}
+#navbar-1 ul li :hover
+{
+	background-color: #fff !important;
+	color: #000;
+	/*transition: 0.7s;*/
+	border-radius: 10px;
+}
+
+#myMenu ul li a{ 
+	color: #fff;
+ }
+#sp-1
+{
+	color: #fff;
+	font-size: 12px;
+}
+#p1{
+	color: #fff;	
+	font-size: 25px;
+}
+#sp-2{
+	color: #fff;
+}
+
+#p2{
+	color: #fff !important ;
+}
+#p3{
+	font-size: 30px;
+	color: #fff;
+}
+#cd:hover{
+	border-radius: 30px;
+	border: 2px solid #000;
+}
+#cd1:hover{
+	border-radius: 30px;
+	border: 2px solid #000;
+}
+#cd2:hover{
+	border-radius: 30px;
+	border: 2px solid #000;
+}
+#fruit:hover{
+	border-radius: 30px;
+	border: 2px solid #000;
+}
+#dairy:hover{
+	border-radius: 30px;
+	border: 2px solid #000;
+}
+#domestic:hover{
+	border-radius: 30px;
+	border: 2px solid #000;
+}
+#jum-2:hover{
+	/*transition: 0.9s;*/
+	border-radius: 30px;
+	border: 2px solid #000;
+}
+#jum-3:hover{
+	/*transition: 0.9s;*/
+	border-radius: 30px;
+	border: 2px solid #000;
+}
+#jum-1{
+	min-height: 650px;
+	/*background-color: red;*/
+	/*background-image: url("../image/36.jpg");*/
+	background-image: url("../image/1.jpeg");
+}
+#jum-2{
+	height:300px;
+	/*background-image: url("../image/2.jpg");*/
+	background-image: 100% 100% auto;
+}
+#jum-3{
+	height:300px;
+	background-image: 100% 100% auto;
+	/*background-image: url("../image/3.jpg");*/
+}
+#cd{
+	height: 260px;
+	background-image: url(../image/4-1.jpg);
+  }
+#cd1{
+	height: 260px;
+	background-image: url(../image/3-1.jpg);
+
+  }
+#cd2{
+	height: 260px;
+	background-image: url(../image/2-1.jpg);
+
+  }
+ #fruit{
+ 	height: 260px;
+ 	background-image: url(../image/5-1.jpg);
+ }
+ #dairy{
+ 	height: 260px;
+ 	background-image: url(../image/7-1.jpg);
+ }
+ #domestic{
+ 	height: 260px;
+ 	background-image: url(../image/9-1.jpg);
+ }
+#cd3{
+	height: 260px;
+	background-image: url("../image/60-1.jpg");
+}
+
+ .cd-1 a{
+	color: #fff;
+ 	text-decoration: none;
+ 	
+ }
+ .cd-1 a:hover{
+ 	text-decoration: none;
+ 	color: red;
+ }
+.pro-bt{
+	background-color: #fff;
+	text-align: center;
+	margin: 0 auto !important	;
+	justify-content: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+.pro-bt:hover{
+	color: #000;
+}
+/*.cd-1:hover .pro-bt{
+	visibility: visible;
+}*/
+#navbar-2{
+	background-color:#EBEBEB;
+	}
+/*#myMenu2 ul li:hover{
+	background-color: #000;
+	border-radius: 10px;
+} 
+#myMenu2 ul li a:hover {
+	
+	color: #fff;
+}*/
+
+.p:hover{
+	position: absolute;
+	background-color: #000;
+	border-radius: 90px;
+	color: #fff;
+	padding: 8px;
+	margin-top: -12px;
+	margin-left: -10px;
+	font-size: 14px;
+	font-weight: bold;
+	transform: rotate(-30deg);
+}
+.ph{
+	
+}
+.pro{
+	height: 300px;
+	/*width: 300px;*/
+	width: auto;
+
+}

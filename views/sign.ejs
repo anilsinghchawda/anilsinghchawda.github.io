@@ -1,0 +1,57 @@
+<div class="container">
+	<div class="row m-4" >
+		<div class="col-md-12">
+			<h1 class="font-weight-bold text-center">USER SIGNUP</h1>
+
+			<div class="center-box"></div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 offset-md-3">
+			<form action="/signup" method="post" >
+				<div class="form-group">
+					<label>Full Name</label>
+					<input type="text" name="fullname" class="form-control">
+				</div>
+				<div class="form-group">
+					<label>Username</label>
+					<input type="text" name="username" class="form-control">
+				</div>
+				<div class="form-group">
+					<label>Password</label>
+					<input type="password" name="password" class="form-control">
+				</div>
+					<div class="form-group">
+						<label class="mr-3">Gender :</label>
+						Male <input type="radio" name="gender">
+						Female <input type="radio" name="gender">
+					</div>				
+				<div class="form-group">
+					<label>Address</label>
+					<textarea class="form-control" name="address"></textarea>
+				</div>
+				<div class="form-group">
+					<label>City</label>
+					<select class="form-control" name="city">
+						<option>Select</option>
+						<option>Indore</option>
+						<option>Ujjain</option>
+						<option>Dewas</option>
+						<option>Bhopal</option>
+						<option>Mumbai</option>
+						<option>Pune</option>
+						<option>Surat</option>
+						<option>Jhansi</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label>Contact</label>
+					<input type="text" class="form-control" name="contact">
+				</div>
+				<button class="btn btn-success my-4" type="submit">Signup</button>
+			</form>
+		</div>
+	</div>
+</div> 

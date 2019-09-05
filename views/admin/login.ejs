@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Login</title>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+	<script type="text/javascript" src="/js/bootstrap.bundle.js"></script>
+	<script type="text/javascript" src="/js/jquery.js"></script>
+</head>
+<body>
+<div class="container" style="min-height: 400px">
+	<div class="row">
+		<div class="col-md-6 offset-md-3">
+	<div class="card m-4">
+		<dir class="card-body">
+			<h3 class="card-header">Admin Login</h3>
+			<form class="form-group" method="post" action="/admin"> 
+					<label>Username</label>
+					<input type="text" class="form-control" name="username" value="anil@gmail.com">
+					<label>Password</label>
+					<input type="password" class="form-control" name="password" value="11">
+					<p class="text-danger"><%= message %></p>
+				<button class="btn btn-success m-4" type="submit">Login</button>
+			</form>
+		</dir>
+	</div>
+</div>
+</div>
+</div>
+</body>
+</html>

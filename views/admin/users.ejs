@@ -1,0 +1,35 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 offset-md-2 mt-4">
+			<h3 class="text-center">All Users</h3>
+		</div>
+	</div>
+	<div class="row">
+		<!-- <div class="col-md-8 offset-md-2"> -->
+			<table class="table table-bordered table-hover table-dark">
+				<tr>
+					<th>S.No.</th>
+					<th>Name</th>
+					<th>Username</th>
+					<th>Gender</th>
+					<th>Address</th>
+					<th>City</th>
+					<th>Contact</th>
+					<th>User Id</th>
+				</tr>
+				<%  result.forEach(function(x, n){ %>
+					<tr>
+						<td><%= n+1 %></td>
+						<td><%= x.fullname %></td>
+						<td><%= x.username %></td>
+						<td><%= x.gender %></td>
+						<td><%= x.address %></td>
+						<td><%= x.city %></td>
+						<td><%= x.contact %></td>
+						<td><%= x._id %></td>
+					</tr>
+			 	<% }); %>
+			</table>
+		</div>
+	<!-- </div> -->
+</div>

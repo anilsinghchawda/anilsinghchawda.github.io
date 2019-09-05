@@ -1,0 +1,26 @@
+{
+  "name": "ndpro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.5",
+    "express-session": "^1.16.2",
+    "file-upload": "0.0.0",
+    "flash": "^1.1.0",
+    "mongodb": "^3.3.0",
+    "nocache": "^2.1.0",
+    "randomstring": "^1.1.5",
+    "sha1": "^1.1.1"
+  }
+}

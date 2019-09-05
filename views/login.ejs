@@ -1,0 +1,28 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 offset-md-4">
+			<h1>User Login</h1>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 offset-md-3">
+			<form action="/login" method="post">
+				<div class="form-group">
+					<label>Username</label>
+					<input type="text" class="form-control" name="username">
+				</div>
+				<div>
+					<label>Password</label>
+					<input type="password" class="form-control" name="password">
+					<p class="text-danger"><%= message %></p>
+				</div>
+				<div class="my-4 form-group">
+					<button type="submit" class="btn btn-success">Login</button>
+					<a href="signup" class="btn btn-outline-primary">SignUp</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

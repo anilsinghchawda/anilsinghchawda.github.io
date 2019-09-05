@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+	<!-- <link rel="stylesheet" type="text/css" src="js/jquery.js"> -->
+  <link rel="stylesheet" type="text/css" href="/css/final.css">
+  <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.bundle.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+</head>
+<body id="body">
+  
+  <div class="container-fluid">
+  	<div class="row">
+  		<div class="col-md-4 border border-dark text-center">
+  			<p class="mt-2"><small><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i> FREE SHIPPING ON ALL ORDERS</small></p>
+  		</div>
+  		<div class="col-md-4 border border-dark text-center">
+  			<p class="mt-2"><small><i class="fa fa-money fa-lg" aria-hidden="true"></i> 100% MONEY BACK GUARANTEE</small></p>
+  		</div>
+  		<div class="col-md-4 border border-dark text-center">
+  			<p class="mb-0"><small><i class="fa fa-clock-o fa-lg" aria-hidden="true"></i> ONLINE SUPPORT 24/7</small></p>
+        <p class="p-0 m-0">Language : 
+        <a href="/">Hindi, </a>
+        <a href="/">English</a>
+
+      </p>
+  		</div>
+  	</div>
+  </div>
+  
+
+ 
+  <nav id="navbar-1" class="navbar navbar-expand-sm sticky-top col-md-12 z-index-1">
+    <a href="/" class="navbar-brand"><h1 id="h11"><b>
+      
+    </b><span id="sp-1" class="badge badge-pill bg-info">अन्न दाता</span></h1></a>  
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#myMenu"><span id="sp-2" class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span></button>
+  <div id="myMenu" class="collapse navbar-collapse position-stable">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a href="#" class="nav-link mr-3 ">Sell</a>
+      </li> 
+       <li class="nav-item">
+        <a href="#" class="nav-link  mr-3">Shop</a>
+      </li>  
+      <li class="nav-item">
+        <div class="dropdown ">
+       <button type="button" class="btn btn-outline-light dropdown-toggle mx-3" data-toggle="dropdown">Facilities</button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item text-dark"  href="#" >Seminars</a>
+      <a class="dropdown-item text-dark"  href="#" >KCC</a>
+      <a class="dropdown-item text-dark"  href="#" >Adviser</a>
+      <a class="dropdown-item text-dark"  href="#" >Apply</a>
+      <a class="dropdown-item text-dark"  href="#" >Contact Us</a>
+    </div>
+      </div> 
+    </li> 
+       <li class="nav-item">
+       <div class="dropdown ">
+       <button type="button" class="btn btn-outline-light dropdown-toggle mx-3" data-toggle="dropdown">Your Opinion</button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item text-dark"  href="#" >Share</a>
+      <a class="dropdown-item text-dark"  href="#" >Problem</a>
+      <a class="dropdown-item text-dark"  href="#" >Feedback</a>
+    </div>
+      </div> 
+      </li>   
+    </ul>
+    <ul class="navbar-nav ml-auto">  
+      <% if(session.is_user_logged_in){ %>
+      <li class="nav-item ml-auto" >
+        <a href="#" class="nav-link mr-3"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i> My Cart </a>
+      </li>
+      <li class="nav-item ml-auto">
+        <a href="#" class="nav-link mr-3"><i class="fa fa-id-card" aria-hidden="true"></i> <%= session.fullname %> </a>
+      </li>
+       <li class="nav-item ml-auto">
+        <a href="/logout" class="nav-link mr-3"> Logout</a>
+      </li>
+
+    <% }else{ %>
+       <li class="nav-item ml-auto"  >
+        <a href="#" class="nav-link mr-3"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i> Cart </a>
+      </li>
+      <li class="nav-item ml-auto" >
+        <a class="nav-link" href="signup"><i class="fa fa-user-plus" aria-hidden="true"></i> SignUp </a>                                                        
+      </li>
+      <li class="nav-item ml-auto">
+        <a class="nav-link" href="login"><i class="fa fa-sign-in" aria-hidden="true"></i> Login </a>
+      </li>
+    <% } %>
+    </ul>
+  </div>  
+</nav>
+
+<%- include(pagename); %>
+
+<div style="min-height: 500px">
+  
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="jumbotron bg-dark text-light">
+    <p>Copyright</p>
+    <p>This website is created in 2019 with legal documentation </p>
+    <p>The owners of copyright in the content on this website may receive compensation for the use of their content by educational institutions and governments, including from licensing schemes managed by Copyright Agency.</p>
+  </div>
+</div>
+
+</body>
+</html>
